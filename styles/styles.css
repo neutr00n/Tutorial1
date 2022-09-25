@@ -1,0 +1,496 @@
+:root {
+  --primary-title-color: #263238;
+  --primary-text-color: #8f95a5;
+  --logo-part-color: #939393;
+  --accent-color: #2196f3;
+  --about-description-color: #2a3246;
+  --prices-description-color: #546269;
+
+  --bg-color: #f5f5f5;
+  --white-color: #ffffff;
+  --black-color: #000000;
+
+  --primary-font: "Poppins", sans-serif;
+}
+
+body {
+  font-family: var(--primary-font);
+
+  color: var(--primary-text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  width: 1378px;
+
+  padding: 0 20px;
+
+  margin: 0 auto;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.5;
+
+  color: var(--black-color);
+}
+
+/* ============================ Header section ============================ */
+
+.header {
+  padding: 55px 0;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 36px;
+  line-height: 1.5;
+
+  color: var(--black-color);
+}
+
+.logo-part {
+  color: var(--logo-part-color);
+}
+
+.site-nav-list {
+  margin-left: 236px;
+
+  display: flex;
+  gap: 50px;
+}
+
+.site-nav-link {
+  padding: 5px 0;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+
+  color: var(--primary-title-color);
+}
+
+.site-nav-link:hover,
+.site-nav-link:focus {
+  color: var(--accent-color);
+}
+
+.header-btn {
+  display: flex;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+  width: 312px;
+  height: 70px;
+
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+
+  color: var(--black-color);
+
+  border: 2px solid #263238;
+  border-radius: 10px;
+}
+
+.header-btn:hover,
+.header-btn:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+/* ============================ Hero section ============================ */
+.hero {
+  padding-bottom: 90px;
+}
+
+.hero .container {
+  background-image: url(../images/hero.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.hero-wrapper {
+  max-width: 540px;
+}
+
+.hero-title {
+  margin-bottom: 40px;
+
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 1.25;
+
+  color: var(--black-color);
+}
+
+.hero-text {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 60px;
+}
+
+.hero-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+
+  width: 426px;
+  height: 100px;
+
+  background: #263238;
+  border-radius: 10px;
+  border: none;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--accent-color);
+}
+
+/* ============================ Skills section ============================ */
+
+.skills {
+  padding: 90px 0;
+}
+
+.skills .title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.skills-wrapper {
+  display: grid;
+  grid-template-columns: 426px 426px 426px;
+  gap: 30px;
+
+  grid-template-areas:
+    "a b c"
+    "a b c"
+    "a d d";
+}
+
+.skills-item {
+  padding: 32px 18px;
+
+  background-color: var(--bg-color);
+}
+
+.skills-item:first-child {
+  grid-area: a;
+}
+
+.skills-item:nth-child(2) {
+  grid-area: b;
+}
+
+.skills-item:nth-child(3) {
+  grid-area: c;
+}
+
+.skills-item:last-child {
+  grid-area: d;
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills-img {
+  margin-bottom: 24px;
+}
+
+.skills-last-wrapper {
+  max-width: 324px;
+}
+
+.skills-name {
+  margin-bottom: 20px;
+
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.5;
+
+  color: var(--primary-title-color);
+}
+
+.skills-name {
+  margin-bottom: 30px;
+
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.5;
+
+  color: var(--primary-title-color);
+}
+
+.skills-description.indent {
+  margin-bottom: 16px;
+}
+
+.skills-description {
+  margin-bottom: 30px;
+}
+
+.skills-link {
+  padding: 17px;
+  display: inline-block;
+  text-align: center;
+
+  min-width: 230px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+
+  color: var(--white-color);
+
+  background: var(--primary-title-color);
+  border-radius: 10px;
+}
+
+/* ============================ About section ============================ */
+
+.about {
+  padding: 90px 0;
+}
+
+.about-wrapper {
+  display: flex;
+}
+
+.about-left {
+  max-width: 652px;
+  width: 100%;
+}
+
+.about-right {
+  padding-left: 146px;
+}
+
+.about .title {
+  margin-bottom: 60px;
+}
+
+.about-text {
+  margin-bottom: 30px;
+
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.about-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-item {
+  max-width: 113px;
+  width: 100%;
+  text-align: center;
+}
+
+.about-list-count {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.5;
+
+  color: var(--about-description-color);
+}
+
+.about-list-text {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+/* ============================ Pricing section ============================ */
+
+.pricing {
+  padding: 90px 0;
+}
+
+.container .title {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.pricing-list {
+  display: flex;
+  gap: 30px;
+}
+
+.pricing-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+.pricing-img {
+  margin-bottom: 31px;
+}
+
+.pricing-title {
+  margin-bottom: 20px;
+
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.6;
+
+  color: var(--primary-title-color);
+}
+
+.pricing-text {
+  margin-bottom: 30px;
+
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.pricing-thumb {
+  display: inline-flex;
+  padding: 5px 0;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  min-width: 260px;
+  margin-top: auto;
+
+  background: #eeeeee;
+  border-radius: 5px;
+}
+
+.price {
+  font-size: 24px;
+  line-height: 1.5;
+
+  color: var(--primary-title-color);
+}
+
+.text {
+  font-size: 18px;
+  line-height: 1.5;
+
+  color: var(--prices-description-color);
+}
+
+/* ============================ Contact section ============================ */
+
+.contact {
+  padding: 90px 0 55px 0;
+}
+
+.contact .container {
+  display: flex;
+}
+
+.contact .title {
+  text-align: left;
+}
+
+.contact-right {
+  padding-left: 144px;
+  width: 100%;
+}
+
+.contact-text {
+  margin-bottom: 30px;
+
+  max-width: 654px;
+
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.contact-form {
+  display: flex;
+  width: 100%;
+}
+
+.contact-input {
+  padding: 20px 30px;
+  width: 365px;
+  width: 100%;
+
+  font-size: 16px;
+  line-height: 1.88;
+
+  border-radius: 10px;
+}
+
+.btn-contact {
+  margin-left: 30px;
+  padding: 20px;
+  min-width: 312px;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--white-color);
+
+  background: var(--primary-title-color);
+  border-radius: 10px;
+  border: none;
+}
+
+/* ============================ Footer section ============================ */
+
+.footer .container {
+  display: flex;
+  padding: 22px;
+  border-top: 1px solid #c4c4c4;
+}
+
+.footer-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 80px;
+}
+
+.footer-link {
+  padding: 5px;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
