@@ -11,6 +11,7 @@
   --black-color: #000000;
 
   --primary-font: "Poppins", sans-serif;
+  --timing-duration: 250ms;
 }
 
 body {
@@ -102,6 +103,7 @@ img {
   line-height: 1.5;
 
   color: var(--primary-title-color);
+  transition: color var(--timing-duration) linear;
 }
 
 .site-nav-link:hover,
@@ -125,6 +127,8 @@ img {
 
   border: 2px solid #263238;
   border-radius: 10px;
+  transition: color var(--timing-duration) linear,
+    border-color var(--timing-duration) linear;
 }
 
 .header-btn:hover,
@@ -139,13 +143,16 @@ img {
 }
 
 .hero .container {
-  background-image: url(../images/hero.svg);
-  background-repeat: no-repeat;
-  background-position: right;
+  display: flex;
 }
 
-.hero-wrapper {
+.hero-left {
   max-width: 540px;
+  width: 100%;
+}
+
+.hero-right {
+  padding-left: 144px;
 }
 
 .hero-title {
@@ -180,6 +187,7 @@ img {
   background: #263238;
   border-radius: 10px;
   border: none;
+  transition: background-color var(--timing-duration) linear;
 }
 
 .hero-btn:hover,
@@ -282,8 +290,14 @@ img {
 
   color: var(--white-color);
 
-  background: var(--primary-title-color);
+  background-color: var(--primary-title-color);
   border-radius: 10px;
+  transition: background-color var(--timing-duration) linear;
+}
+
+.skills-link:hover,
+.skills-link:focus {
+  background-color: var(--accent-color);
 }
 
 /* ============================ About section ============================ */
@@ -468,9 +482,15 @@ img {
 
   color: var(--white-color);
 
-  background: var(--primary-title-color);
+  background-color: var(--primary-title-color);
   border-radius: 10px;
   border: none;
+  transition: background-color var(--timing-duration) linear;
+}
+
+.btn-contact:hover,
+.btn-contact:focus {
+  background-color: var(--accent-color);
 }
 
 /* ============================ Footer section ============================ */
@@ -493,4 +513,11 @@ img {
   font-size: 24px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+
+  transition: color var(--timing-duration) linear;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-color);
 }
