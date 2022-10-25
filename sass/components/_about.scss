@@ -1,0 +1,51 @@
+.about {
+  padding: 90px 0;
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__left {
+    max-width: 652px;
+    width: 100%;
+  }
+
+  &__right {
+    padding-left: 146px;
+  }
+
+  .title {
+    margin-bottom: 60px;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+
+    font-size: 20px;
+    line-height: 1.8;
+  }
+
+  &__list {
+    @include flex(flex, space-around);
+  }
+
+  &__item {
+    max-width: 113px;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__list-count {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.5;
+
+    // color: $about-description-color;
+    color: getColor("about-description-color");
+  }
+
+  &__list-text {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}

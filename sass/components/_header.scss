@@ -1,0 +1,77 @@
+.header {
+  padding: 55px 0;
+
+  & > .container {
+    @include flex(flex, flex-start, center);
+  }
+}
+
+.header__nav {
+  @include flex(flex, flex-start, center);
+}
+
+.logo {
+  font-size: 36px;
+  line-height: 1.5;
+
+  color: getColor("black-color");
+
+  &__part {
+    // color: $logo-part-color;
+    color: getColor("logo-part-color");
+  }
+}
+
+.site-nav__list {
+  margin-left: 236px;
+
+  @include flex;
+  gap: 50px;
+}
+
+.site-nav__link {
+  padding: 5px 0;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+
+  // color: $primary-title-color;
+  color: getColor("primary-title-color");
+  transition: color $timing-duration linear;
+
+  &:hover,
+  &:focus {
+    // color: $accent-color;
+    color: getColor("accent-color");
+  }
+}
+
+.header__btn {
+  @include flex(flex, center, center);
+
+  margin-left: auto;
+
+  width: 312px;
+  height: 70px;
+
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+
+  // color: $black-color;
+  color: getColor ("black-color");
+
+  border: 2px solid #263238;
+  border-radius: 10px;
+  transition: color $timing-duration linear,
+    border-color var $timing-duration linear;
+
+  &:hover,
+  &:focus {
+    // color: var(--accent-color);
+    color: getColor("accent-color");
+    // border-color: var(--accent-color);
+    border-color: getColor("accent-color");
+  }
+}

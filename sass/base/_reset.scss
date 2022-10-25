@@ -1,0 +1,26 @@
+body {
+  font-family: var(--primary-font);
+
+  color: var(--primary-text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  // width: 100%;
+  // height: auto;
+}

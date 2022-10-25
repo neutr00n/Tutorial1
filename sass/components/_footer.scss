@@ -1,0 +1,28 @@
+.footer {
+  .container {
+    display: flex;
+    padding: 22px;
+    border-top: 1px solid #c4c4c4;
+  }
+
+  &__list {
+    @include flex(flex, flex-start, center);
+    margin-left: auto;
+    gap: 80px;
+  }
+
+  &__link {
+    padding: 5px;
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    transition: color &timing-duration linear;
+
+    &:hover,
+    &:focus {
+      // color: $accent-color;
+      color: getColor("accent-color");
+    }
+  }
+}

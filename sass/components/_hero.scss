@@ -1,0 +1,59 @@
+.hero {
+  padding-bottom: 90px;
+
+  & > .container {
+    display: flex;
+  }
+}
+
+.hero__left {
+  max-width: 540px;
+  width: 100%;
+}
+
+.hero__right {
+  padding-left: 144px;
+}
+
+.hero__title {
+  margin-bottom: 40px;
+
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 1.25;
+
+  // color: $black-color;
+  color: getColor("black-color");
+}
+
+.hero__text {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 60px;
+}
+
+.hero__btn {
+  @include flex(flex, center, center);
+  font-size: 36px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+
+  // color: $white-color;
+  color: getColor("white-color");
+
+  width: 426px;
+  height: 100px;
+
+  // background: $primary-title-color;
+  background-color: getColor("primary-title-color");
+
+  border-radius: 10px;
+  border: none;
+  transition: background-color $timing-duration linear;
+
+  &:hover,
+  &:focus {
+    // background-color: $accent-color;
+    background-color: getColor("accent-color");
+  }
+}

@@ -1,0 +1,14 @@
+@import "./base/reset";
+@import "./base/common";
+
+@import "./utilits/vars";
+@import "./utilits/placexolder";
+@import "./utilits/mixins.scss";
+
+@import "./components/header";
+@import "./components/hero";
+@import "./components/skills";
+@import "./components/about";
+@import "./components/pricing";
+@import "./components/contacts";
+@import "./components/footer";
